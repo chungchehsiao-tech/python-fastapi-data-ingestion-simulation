@@ -14,7 +14,7 @@ class ClientData(BaseModel):
 @app.get("/ping")
 def health_check():
     return{
-        "status": "online",
+        "status": "online - system nominal",
         "message": "Data Ingestion API is runniing securely!"
     }
 
