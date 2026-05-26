@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.10-slim
 
 #non-root user
 RUN groupadd -r localgroup && useradd -r -g localgroup localuser
