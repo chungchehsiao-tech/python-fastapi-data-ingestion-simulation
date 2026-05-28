@@ -12,7 +12,7 @@ os.environ["API_KEY"] = "good_key"
 def test_read_root():
     response = client.get("/ping")
     assert response.status_code == 200
-    assert response.json() == {"status":"active","message":"Data Ingestion API is running securely!"}
+    assert response.json() == {"status":"active","message":"API is running securely!"}
 
 #Test2: unauthorize user without header
 def test_ingest_data_unauthorized():
