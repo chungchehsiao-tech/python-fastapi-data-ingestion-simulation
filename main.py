@@ -19,7 +19,7 @@ class ClientData(BaseModel):
 def health_check():
     return{
         "status": "active",
-        "message": "Data Ingestion API is running securely!"
+        "message": "API is running securely!"
     }
 
 # -- Endpoint 2: POST (the ingestion route) --
