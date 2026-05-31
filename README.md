@@ -5,7 +5,8 @@ This project simulates an enterprise-level production environment for self-learn
 
 ## 🌉 Architecture
 
-![alt text](architecture.png)
+![alt text](architecture.png)  
+
 The deployment flow uses GitHub Actions for continuous integration, ensuring all automated tests pass before a Docker image is pushed to the GitHub Container Registry (GHCR). In the runtime environment, the containerized FastAPI needs an `API_KEY` for authorization to receive incoming data.
 
 ## ⚡ Quick Start
@@ -61,6 +62,7 @@ For Windows (PowerShell):
 Invoke-RestMethod -Uri "http://127.0.0.1:8000/ingest" -Method Post -Headers @{"authorization"="your_key"; "Content-Type"="application/json"} -Body '{"user_id": 1, "data_payload": "Terminal test."}'
 ```  
 🖼️ Expected terminal image on Powershell Client:
+
 ![alt text](<terminal_test.png>)
 
 For Mac / Linux:
